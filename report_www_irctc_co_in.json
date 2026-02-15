@@ -1,0 +1,1357 @@
+{
+  "target": "https://www.irctc.co.in/nget/train-search",
+  "status": "Success",
+  "metrics": {
+    "violations": 13,
+    "interactive_elements": 77
+  },
+  "evidence_image": "evidence_www_irctc_co_in.png",
+  "violations": [
+    {
+      "id": "aria-allowed-attr",
+      "impact": "critical",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412"
+      ],
+      "description": "Ensures ARIA attributes are allowed for an element's role",
+      "help": "Elements must only use allowed ARIA attributes",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/aria-allowed-attr?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "aria-allowed-attr",
+              "data": [
+                "aria-expanded=\"false\""
+              ],
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute is not allowed: aria-expanded=\"false\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<input aria-autocomplete=\"list\" role=\"searchbox\" aria-haspopup=\"true\" class=\"ng-tns-c68-7 ui-inputtext ui-widget ui-state-default ui-corner-all ui-autocomplete-input ng-star-inserted\" autocomplete=\"off\" type=\"text\" aria-controls=\"pr_id_1_list\" aria-expanded=\"false\" aria-activedescendant=\"p-highlighted-option\" aria-label=\"Enter From station. Input is Mandatory.\">",
+          "target": [
+            "input[aria-controls=\"pr_id_1_list\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        },
+        {
+          "any": [
+            {
+              "id": "aria-allowed-attr",
+              "data": [
+                "aria-expanded=\"false\""
+              ],
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute is not allowed: aria-expanded=\"false\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<input aria-autocomplete=\"list\" role=\"searchbox\" aria-haspopup=\"true\" class=\"ng-tns-c68-8 ui-inputtext ui-widget ui-state-default ui-corner-all ui-autocomplete-input ng-star-inserted\" autocomplete=\"off\" type=\"text\" aria-controls=\"pr_id_2_list\" aria-expanded=\"false\" aria-activedescendant=\"p-highlighted-option\" aria-label=\"Enter To station. Input is Mandatory.\">",
+          "target": [
+            "input[aria-controls=\"pr_id_2_list\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        }
+      ]
+    },
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "description": "Ensures role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/aria-allowed-role?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "aria-allowed-role",
+              "data": [
+                "listbox"
+              ],
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "ARIA role listbox is not allowed for given element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "minor",
+          "html": "<input type=\"text\" readonly=\"\" aria-haspopup=\"listbox\" role=\"listbox\" class=\"ng-tns-c76-10\" aria-label=\"All Classes\">",
+          "target": [
+            "input[aria-label=\"All Classes\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role listbox is not allowed for given element"
+        },
+        {
+          "any": [
+            {
+              "id": "aria-allowed-role",
+              "data": [
+                "listbox"
+              ],
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "ARIA role listbox is not allowed for given element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "minor",
+          "html": "<input type=\"text\" readonly=\"\" aria-haspopup=\"listbox\" role=\"listbox\" class=\"ng-tns-c76-11\" aria-label=\"GENERAL\">",
+          "target": [
+            "input[aria-label=\"GENERAL\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role listbox is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "aria-command-name",
+      "impact": "serious",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412"
+      ],
+      "description": "Ensures every ARIA button, link and menuitem has an accessible name",
+      "help": "ARIA commands must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/aria-command-name?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div role=\"button\" aria-haspopup=\"listbox\" class=\"ui-dropdown-trigger ui-state-default ui-corner-right ng-tns-c76-10\"><span class=\"ui-dropdown-trigger-icon ui-clickable ng-tns-c76-10 pi pi-chevron-down\"></span></div>",
+          "target": [
+            ".ui-dropdown.ui-state-default.ng-tns-c76-10 > .ui-dropdown-trigger.ui-corner-right[role=\"button\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div role=\"button\" aria-haspopup=\"listbox\" class=\"ui-dropdown-trigger ui-state-default ui-corner-right ng-tns-c76-11\"><span class=\"ui-dropdown-trigger-icon ui-clickable ng-tns-c76-11 pi pi-chevron-down\"></span></div>",
+          "target": [
+            ".ui-dropdown.ui-state-default.ng-tns-c76-11 > .ui-dropdown-trigger.ui-corner-right[role=\"button\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "aria-valid-attr-value",
+      "impact": "critical",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412"
+      ],
+      "description": "Ensures all ARIA attributes have valid values",
+      "help": "ARIA attributes must conform to valid values",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/aria-valid-attr-value?application=axeAPI",
+      "nodes": [
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-valid-attr-value",
+              "data": [
+                "aria-activedescendant=\"p-highlighted-option\""
+              ],
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Invalid ARIA attribute value: aria-activedescendant=\"p-highlighted-option\""
+            }
+          ],
+          "none": [],
+          "impact": "critical",
+          "html": "<input aria-autocomplete=\"list\" role=\"searchbox\" aria-haspopup=\"true\" class=\"ng-tns-c68-7 ui-inputtext ui-widget ui-state-default ui-corner-all ui-autocomplete-input ng-star-inserted\" autocomplete=\"off\" type=\"text\" aria-controls=\"pr_id_1_list\" aria-expanded=\"false\" aria-activedescendant=\"p-highlighted-option\" aria-label=\"Enter From station. Input is Mandatory.\">",
+          "target": [
+            "input[aria-controls=\"pr_id_1_list\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Invalid ARIA attribute value: aria-activedescendant=\"p-highlighted-option\""
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "aria-valid-attr-value",
+              "data": [
+                "aria-activedescendant=\"p-highlighted-option\""
+              ],
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Invalid ARIA attribute value: aria-activedescendant=\"p-highlighted-option\""
+            }
+          ],
+          "none": [],
+          "impact": "critical",
+          "html": "<input aria-autocomplete=\"list\" role=\"searchbox\" aria-haspopup=\"true\" class=\"ng-tns-c68-8 ui-inputtext ui-widget ui-state-default ui-corner-all ui-autocomplete-input ng-star-inserted\" autocomplete=\"off\" type=\"text\" aria-controls=\"pr_id_2_list\" aria-expanded=\"false\" aria-activedescendant=\"p-highlighted-option\" aria-label=\"Enter To station. Input is Mandatory.\">",
+          "target": [
+            "input[aria-controls=\"pr_id_2_list\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Invalid ARIA attribute value: aria-activedescendant=\"p-highlighted-option\""
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143"
+      ],
+      "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+      "help": "Elements must have sufficient color contrast",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/color-contrast?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#fb792b",
+                "contrastRatio": 2.66,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button _ngcontent-qlt-c58=\"\" type=\"submit\" class=\"btn btn-primary\" aria-label=\"Confirmation. &lt;br/&gt;w.e.f 12 January 2026, only Aadhaar-authenticated users are allowed to book general reserved tickets on the opening day of Advance Reservation Period(ARP).\n\r\n&lt;br/&gt;&lt;br/&gt;12 \u091c\u0928\u0935\u0930\u0940 2026 \u0938\u0947 \u0905\u0917\u094d\u0930\u093f\u092e \u0906\u0930\u0915\u094d\u0937\u0923 \u0905\u0935\u0927\u093f (ARP) \u0915\u0947 \u0906\u0930\u0902\u092d\u093f\u0915 \u0926\u093f\u0928 \u0938\u093e\u092e\u093e\u0928\u094d\u092f \u0906\u0930\u0915\u094d\u0937\u093f\u0924 \u091f\u093f\u0915\u091f\u094b\u0902 \u0915\u0940 \u092c\u0941\u0915\u093f\u0902\u0917 \u0915\u0947\u0935\u0932 \u0906\u0927\u093e\u0930-\u092a\u094d\u0930\u092e\u093e\u0923\u093f\u0924 \u0909\u092a\u092f\u094b\u0917\u0915\u0930\u094d\u0924\u093e\u0913\u0902 \u0915\u094b \u0939\u0940 \u0915\u0930\u0928\u0947 \u0915\u0940 \u0905\u0928\u0941\u092e\u0924\u093f \u0939\u0948\u0964. Press OK to confirm\">",
+                  "target": [
+                    ".btn"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.66 (foreground color: #ffffff, background color: #fb792b, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button _ngcontent-qlt-c58=\"\" type=\"submit\" class=\"btn btn-primary\" aria-label=\"Confirmation. &lt;br/&gt;w.e.f 12 January 2026, only Aadhaar-authenticated users are allowed to book general reserved tickets on the opening day of Advance Reservation Period(ARP).\n\r\n&lt;br/&gt;&lt;br/&gt;12 \u091c\u0928\u0935\u0930\u0940 2026 \u0938\u0947 \u0905\u0917\u094d\u0930\u093f\u092e \u0906\u0930\u0915\u094d\u0937\u0923 \u0905\u0935\u0927\u093f (ARP) \u0915\u0947 \u0906\u0930\u0902\u092d\u093f\u0915 \u0926\u093f\u0928 \u0938\u093e\u092e\u093e\u0928\u094d\u092f \u0906\u0930\u0915\u094d\u0937\u093f\u0924 \u091f\u093f\u0915\u091f\u094b\u0902 \u0915\u0940 \u092c\u0941\u0915\u093f\u0902\u0917 \u0915\u0947\u0935\u0932 \u0906\u0927\u093e\u0930-\u092a\u094d\u0930\u092e\u093e\u0923\u093f\u0924 \u0909\u092a\u092f\u094b\u0917\u0915\u0930\u094d\u0924\u093e\u0913\u0902 \u0915\u094b \u0939\u0940 \u0915\u0930\u0928\u0947 \u0915\u0940 \u0905\u0928\u0941\u092e\u0924\u093f \u0939\u0948\u0964. Press OK to confirm\">",
+          "target": [
+            ".btn"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.66 (foreground color: #ffffff, background color: #fb792b, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#fb792b",
+                "contrastRatio": 2.66,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button _ngcontent-qlt-c78=\"\" type=\"submit\" class=\"search_btn train_Search\"> Search Trains </button>",
+                  "target": [
+                    ".train_Search"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.66 (foreground color: #ffffff, background color: #fb792b, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button _ngcontent-qlt-c78=\"\" type=\"submit\" class=\"search_btn train_Search\"> Search Trains </button>",
+          "target": [
+            ".train_Search"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.66 (foreground color: #ffffff, background color: #fb792b, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#007ad9",
+                "bgColor": "#ffffff",
+                "contrastRatio": 4.38,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null
+              },
+              "relatedNodes": [
+                {
+                  "html": "<body class=\"ui-overflow-hidden TR-100ZZIaw\">",
+                  "target": [
+                    "body"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 4.38 (foreground color: #007ad9, background color: #ffffff, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"http://cris.org.in\">CRIS</a>",
+          "target": [
+            "a[href$=\"cris.org.in\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.38 (foreground color: #007ad9, background color: #ffffff, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "duplicate-id",
+      "impact": "minor",
+      "tags": [
+        "cat.parsing",
+        "wcag2a",
+        "wcag411"
+      ],
+      "description": "Ensures every id attribute value is unique",
+      "help": "id attribute value must be unique",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "duplicate-id",
+              "data": "launcherClose",
+              "relatedNodes": [
+                {
+                  "html": "<img decoding=\"async\" src=\"blob:https://www.irctc.co.in/611c1c84-2f95-4ca8-901b-d469ca99b0e4\" id=\"launcherClose\" style=\"z-index: 9; background: rgba(0, 0, 0, 0.37); width: 38px; cursor: pointer; display: none; border-radius: 24px; right: 20px; top: 20px; box-shadow: rgba(0, 0, 0, 0.16) 0px 7px 6px 1px; position: absolute;\">",
+                  "target": [
+                    "#corover-ad > img[decoding=\"async\"]"
+                  ]
+                }
+              ],
+              "impact": "minor",
+              "message": "Document has multiple static elements with the same id attribute: launcherClose"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "minor",
+          "html": "<img decoding=\"async\" src=\"blob:https://www.irctc.co.in/611c1c84-2f95-4ca8-901b-d469ca99b0e4\" alt=\"Close AskDisha Assistant\" id=\"launcherClose\" style=\"z-index: 9; background: rgba(249, 249, 249, 0.37); width: 38px; cursor: pointer; display: none; border-radius: 24px; right: 10px; top: 25px; position: absolute;\">",
+          "target": [
+            "#corover-askDisha > img[alt=\"Close AskDisha Assistant\"][decoding=\"async\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has multiple static elements with the same id attribute: launcherClose"
+        }
+      ]
+    },
+    {
+      "id": "image-alt",
+      "impact": "critical",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag111",
+        "section508",
+        "section508.22.a",
+        "ACT"
+      ],
+      "description": "Ensures <img> elements have alternate text or a role of none or presentation",
+      "help": "Images must have alternate text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/image-alt?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an alt attribute"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<img _ngcontent-qlt-c58=\"\" src=\"https://contents.irctc.co.in/en/Web_alerts_700x90.jpeg\" scrolling=\"no\" style=\"width: 100%;\">",
+          "target": [
+            ".text-center:nth-child(2) > img[scrolling=\"no\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an alt attribute"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<img _ngcontent-qlt-c59=\"\" applazyload=\"\" rel=\"preload\" src=\"./assets/images/irctc-whatsapp.png\" style=\"height: 50px;\">",
+          "target": [
+            "i[alt=\"IRCTC official WhatsApp logo\"] > img[applazyload=\"\"][rel=\"preload\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "has-alt",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an alt attribute"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<img _ngcontent-qlt-c59=\"\" applazyload=\"\" rel=\"preload\" src=\"./assets/images/Koo.png\" style=\"height: 45px;\">",
+          "target": [
+            "img[src$=\"Koo.png\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "label",
+      "impact": "critical",
+      "tags": [
+        "cat.forms",
+        "wcag2a",
+        "wcag412",
+        "wcag131",
+        "section508",
+        "section508.22.n",
+        "ACT"
+      ],
+      "description": "Ensures every form element has a label",
+      "help": "Form elements must have labels",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/label?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Form element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Form element does not have an explicit <label>"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "non-empty-placeholder",
+              "data": {
+                "messageKey": "emptyAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has an empty placeholder attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<input type=\"text\" autocomplete=\"off\" class=\"ng-tns-c69-9 ui-inputtext ui-widget ui-state-default ui-corner-all ng-star-inserted\" placeholder=\"\">",
+          "target": [
+            "input[placeholder=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Form element does not have an implicit (wrapped) <label>\n  Form element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has an empty placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "landmark-banner-is-top-level",
+      "impact": "moderate",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "description": "Ensures the banner landmark is at top level",
+      "help": "Banner landmark should not be contained in another landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/landmark-banner-is-top-level?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "landmark-is-top-level",
+              "data": {
+                "role": "banner"
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "The banner landmark is contained in another landmark."
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<div _ngcontent-qlt-c58=\"\" role=\"banner\" class=\"col-sm-12 h_container\">",
+          "target": [
+            ".h_container"
+          ],
+          "failureSummary": "Fix any of the following:\n  The banner landmark is contained in another landmark."
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-banner",
+      "impact": "moderate",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "description": "Ensures the document has at most one banner landmark",
+      "help": "Document should not have more than one banner landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/landmark-no-duplicate-banner?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "page-no-duplicate-banner",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<div _ngcontent-qlt-c58=\"\" role=\"banner\" class=\"col-sm-12 h_container\">",
+                  "target": [
+                    ".h_container"
+                  ]
+                }
+              ],
+              "impact": "moderate",
+              "message": "Document has more than one banner landmark"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<div _ngcontent-qlt-c64=\"\" role=\"banner\" aria-label=\"Header\" class=\"col-xs-12 header-fix\" style=\"padding-left: 0px; padding-right: 0px;\">",
+          "target": [
+            ".header-fix"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one banner landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-one-main",
+      "impact": "moderate",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "description": "Ensures the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/landmark-one-main?application=axeAPI",
+      "nodes": [
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "page-has-main",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Document does not have a main landmark"
+            }
+          ],
+          "none": [],
+          "impact": "moderate",
+          "html": "<html lang=\"en\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/page-has-heading-one?application=axeAPI",
+      "nodes": [
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "page-has-heading-one",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Page must have a level-one heading"
+            }
+          ],
+          "none": [],
+          "impact": "moderate",
+          "html": "<html lang=\"en\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "description": "Ensures all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/region?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<div _ngcontent-qlt-c81=\"\" class=\"hidden-xs\">",
+          "target": [
+            ".col-sm-6.remove-padding[_ngcontent-qlt-c81=\"\"] > .hidden-xs[_ngcontent-qlt-c81=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<div _ngcontent-qlt-c78=\"\" class=\"col-xs-12 loginhead hidden-xs\" style=\"margin-bottom: 10px; line-height: 82px;\"><label _ngcontent-qlt-c78=\"\" class=\"heading-font\" style=\"margin-top: 4px; margin-bottom: 0px;\"> BOOK TICKET </label></div>",
+          "target": [
+            ".loginhead"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<p-autocomplete _ngcontent-qlt-c78=\"\" formcontrolname=\"origin\" delay=\"100\" id=\"origin\" arialabel=\"Enter From station. Input is Mandatory.\" pinputtext=\"\" class=\"form-group ng-tns-c68-7 ng-pristine ng-invalid ng-touched\">",
+          "target": [
+            "#origin"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<label _ngcontent-qlt-c78=\"\" for=\"origin\" aria-labelledby=\"origin\">From</label>",
+          "target": [
+            "label[for=\"origin\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<div _ngcontent-qlt-c78=\"\" class=\"col-md-6 col-xs-12 remove-padding\">",
+          "target": [
+            ".form-swap.remove-padding.col-xs-12:nth-child(2) > .col-md-6.remove-padding.col-xs-12:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<div _ngcontent-qlt-c78=\"\" class=\"col-md-6 col-xs-12 remove-padding\">",
+          "target": [
+            ".form-swap.remove-padding.col-xs-12:nth-child(3) > .col-md-6.remove-padding.col-xs-12:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<div class=\"ui-helper-hidden-accessible ng-tns-c76-10\"><input type=\"text\" readonly=\"\" aria-haspopup=\"listbox\" role=\"listbox\" class=\"ng-tns-c76-10\" aria-label=\"All Classes\"></div>",
+          "target": [
+            ".ui-helper-hidden-accessible.ng-tns-c76-10"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<div class=\"ui-dropdown-label-container ng-tns-c76-10\"><span class=\"ng-tns-c76-10 ui-dropdown-label ui-inputtext ui-corner-all ng-star-inserted\">All Classes<!----><!----><!----></span><!----><!----><!----><!----></div>",
+          "target": [
+            ".ui-dropdown-label-container.ng-tns-c76-10"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<div class=\"ui-helper-hidden-accessible ng-tns-c76-11\"><input type=\"text\" readonly=\"\" aria-haspopup=\"listbox\" role=\"listbox\" class=\"ng-tns-c76-11\" aria-label=\"GENERAL\"></div>",
+          "target": [
+            ".ui-helper-hidden-accessible.ng-tns-c76-11"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<div class=\"ui-dropdown-label-container ng-tns-c76-11\"><span class=\"ng-tns-c76-11 ui-dropdown-label ui-inputtext ui-corner-all ng-star-inserted\">GENERAL<!----><!----><!----></span><!----><!----><!----><!----></div>",
+          "target": [
+            ".ui-dropdown-label-container.ng-tns-c76-11"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<div _ngcontent-qlt-c78=\"\" class=\"col-xs-12 remove-padding\">",
+          "target": [
+            ".remove-padding.col-xs-12[_ngcontent-qlt-c78=\"\"]:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<div _ngcontent-qlt-c81=\"\" class=\"textheading\"><label _ngcontent-qlt-c81=\"\">INDIAN RAILWAYS</label><span _ngcontent-qlt-c81=\"\">Safety</span><span _ngcontent-qlt-c81=\"\">Security</span><span _ngcontent-qlt-c81=\"\" style=\"border: 0px;\">Punctuality</span></div>",
+          "target": [
+            ".textheading"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<div _ngcontent-qlt-c81=\"\" class=\"text-center brdrBottom hidden-xs\" style=\"position: sticky; padding-top: 7px;\">",
+          "target": [
+            ".brdrBottom"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<div _ngcontent-qlt-c81=\"\" class=\"text-center hidden-xs\" style=\"margin-top: 5px;\" id=\"div-gpt-ad-5941682-0\"><img _ngcontent-qlt-c81=\"\" src=\"http://contents.irctc.co.in/en/GPT_NWEB_HOME_TOP.jpeg\" alt=\"\" scrolling=\"no\" style=\"width: 970px; height: 90px;\"></div>",
+          "target": [
+            "#div-gpt-ad-5941682-0"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<div _ngcontent-qlt-c81=\"\" class=\"container hidden-xs\">",
+          "target": [
+            ".container.hidden-xs[_ngcontent-qlt-c81=\"\"]:nth-child(10)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<div _ngcontent-qlt-c81=\"\" class=\"text-center hidden-xs\" style=\"margin: 0px 0px 15px 15px;\"><img _ngcontent-qlt-c81=\"\" src=\"http://contents.irctc.co.in/en/GPT_NWEB_HOME_CENTER.jpeg\" alt=\"\" scrolling=\"no\" style=\"width: 970px; height: 90;\"></div>",
+          "target": [
+            ".hidden-xs.text-center[_ngcontent-qlt-c81=\"\"]:nth-child(11)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<h2 _ngcontent-qlt-c81=\"\" class=\"main-heading\">HOLIDAYS</h2>",
+          "target": [
+            ".main-heading"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<div _ngcontent-qlt-c81=\"\" class=\"col-sm-6 col-xs-12 col-md-4 col-lg-4 flex50\">",
+          "target": [
+            ".col-lg-4.flex50.col-md-4:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<div _ngcontent-qlt-c81=\"\" class=\"col-sm-6 col-xs-12 col-md-4 col-lg-4 flex50\">",
+          "target": [
+            ".col-lg-4.flex50.col-md-4:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<div _ngcontent-qlt-c81=\"\" class=\"col-sm-6 col-xs-12 col-md-4 col-lg-4 flex50\">",
+          "target": [
+            ".col-lg-4.flex50.col-md-4:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<div _ngcontent-qlt-c81=\"\" class=\"col-sm-6 col-xs-12 col-md-4 col-lg-4 flex50\">",
+          "target": [
+            ".col-lg-4.flex50.col-md-4:nth-child(4)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<div _ngcontent-qlt-c81=\"\" class=\"col-sm-6 col-xs-12 col-md-4 col-lg-4 flex50\">",
+          "target": [
+            ".col-lg-4.flex50.col-md-4:nth-child(5)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<div _ngcontent-qlt-c81=\"\" class=\"col-sm-6 col-md-4 col-lg-4 flex50 hidden-xs\">",
+          "target": [
+            ".col-lg-4.flex50.col-md-4:nth-child(6)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<div _ngcontent-qlt-c59=\"\" class=\"container hidden-xs\">",
+          "target": [
+            ".container.hidden-xs[_ngcontent-qlt-c59=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<div id=\"div-gpt-ad-1695628181945-0\" style=\"position: fixed !important; bottom: 10px !important; right: 44px !important; background-image: none; width: 110px !important; background-color: transparent !important; height: 50px !important; border: 2px !important; z-index: 2147483647; display: block;\">",
+          "target": [
+            "#div-gpt-ad-1695628181945-0"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}

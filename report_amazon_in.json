@@ -1,0 +1,1335 @@
+{
+  "target": "https://amazon.in",
+  "status": "Success",
+  "metrics": {
+    "violations": 14,
+    "interactive_elements": 367
+  },
+  "evidence_image": "evidence_amazon_in.png",
+  "violations": [
+    {
+      "id": "aria-allowed-attr",
+      "impact": "critical",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412"
+      ],
+      "description": "Ensures ARIA attributes are allowed for an element's role",
+      "help": "Elements must only use allowed ARIA attributes",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/aria-allowed-attr?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "aria-allowed-attr",
+              "data": [
+                "aria-expanded=\"false\""
+              ],
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "ARIA attribute is not allowed: aria-expanded=\"false\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<input type=\"text\" id=\"twotabsearchtextbox\" value=\"\" name=\"field-keywords\" autocomplete=\"off\" placeholder=\"Search Amazon.in\" class=\"nav-input nav-progressive-attribute\" dir=\"auto\" tabindex=\"0\" aria-label=\"Search Amazon.in\" role=\"searchbox\" aria-autocomplete=\"list\" aria-controls=\"sac-autocomplete-results-container\" aria-expanded=\"false\" aria-haspopup=\"grid\" spellcheck=\"false\">",
+          "target": [
+            "#twotabsearchtextbox"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA attribute is not allowed: aria-expanded=\"false\""
+        }
+      ]
+    },
+    {
+      "id": "aria-allowed-role",
+      "impact": "minor",
+      "tags": [
+        "cat.aria",
+        "best-practice"
+      ],
+      "description": "Ensures role attribute has an appropriate value for the element",
+      "help": "ARIA role should be appropriate for the element",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/aria-allowed-role?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "aria-allowed-role",
+              "data": [
+                "presentation"
+              ],
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "ARIA role presentation is not allowed for given element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "minor",
+          "html": "<img class=\"responsive-image_lazyImg__2NuGN responsive-image_visible__3_4CF responsive-image_responsiveImg__OZBqH\" srcset=\"https://m.media-amazon.com/images/I/71g2KUp4hHL._SX160_QL100_AC_SCLZZZZZZZ_.jpg, https://m.media-amazon.com/images/I/71g2KUp4hHL._SX240_QL100_AC_SCLZZZZZZZ_.jpg 1.5x, https://m.media-amazon.com/images/I/71g2KUp4hHL._SX320_QL100_AC_SCLZZZZZZZ_.jpg 2x, https://m.media-amazon.com/images/I/71g2KUp4hHL._SX480_QL100_AC_SCLZZZZZZZ_.jpg 3x\" src=\"https://m.media-amazon.com/images/I/71g2KUp4hHL._SX160_QL100_AC_SCLZZZZZZZ_.jpg\" alt=\"KOTTY Men\u2019s Classic Flannel Inspired Shacket, Soft Comfortable Winter Layer, Modern Casual Shirt Jacket for Office, Travel and Outdoor Style\" role=\"presentation\">",
+          "target": [
+            "div[data-in-view-id-3=\"6\"] > .imageContainer--14vu8 > .imageAnchor--21TeS[data-id=\"ImageAnchor\"][role=\"link\"] > .responsive-image_lazyImg__2NuGN.responsive-image_visible__3_4CF.responsive-image_responsiveImg__OZBqH"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role presentation is not allowed for given element"
+        },
+        {
+          "any": [
+            {
+              "id": "aria-allowed-role",
+              "data": [
+                "presentation"
+              ],
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "ARIA role presentation is not allowed for given element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "minor",
+          "html": "<img class=\"responsive-image_lazyImg__2NuGN responsive-image_visible__3_4CF responsive-image_responsiveImg__OZBqH\" srcset=\"https://m.media-amazon.com/images/I/61iZyHCOhTL._SX160_QL100_AC_SCLZZZZZZZ_.jpg, https://m.media-amazon.com/images/I/61iZyHCOhTL._SX240_QL100_AC_SCLZZZZZZZ_.jpg 1.5x, https://m.media-amazon.com/images/I/61iZyHCOhTL._SX320_QL100_AC_SCLZZZZZZZ_.jpg 2x, https://m.media-amazon.com/images/I/61iZyHCOhTL._SX480_QL100_AC_SCLZZZZZZZ_.jpg 3x\" src=\"https://m.media-amazon.com/images/I/61iZyHCOhTL._SX160_QL100_AC_SCLZZZZZZZ_.jpg\" alt=\"KOTTY Men's Straight Fit Jeans \u2013 Classic Denim with Comfortable Fit, Durable Fabric, and Timeless Style\" role=\"presentation\">",
+          "target": [
+            "div[data-csa-c-pos=\"2,1\"] > .imageContainer--14vu8 > .imageAnchor--21TeS[data-id=\"ImageAnchor\"][role=\"link\"] > .responsive-image_lazyImg__2NuGN.responsive-image_visible__3_4CF.responsive-image_responsiveImg__OZBqH"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role presentation is not allowed for given element"
+        },
+        {
+          "any": [
+            {
+              "id": "aria-allowed-role",
+              "data": [
+                "presentation"
+              ],
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "ARIA role presentation is not allowed for given element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "minor",
+          "html": "<img class=\"responsive-image_lazyImg__2NuGN responsive-image_visible__3_4CF responsive-image_responsiveImg__OZBqH\" srcset=\"https://m.media-amazon.com/images/I/61r7yWoY4+L._SX160_QL100_AC_SCLZZZZZZZ_.jpg, https://m.media-amazon.com/images/I/61r7yWoY4+L._SX240_QL100_AC_SCLZZZZZZZ_.jpg 1.5x, https://m.media-amazon.com/images/I/61r7yWoY4+L._SX320_QL100_AC_SCLZZZZZZZ_.jpg 2x, https://m.media-amazon.com/images/I/61r7yWoY4+L._SX480_QL100_AC_SCLZZZZZZZ_.jpg 3x\" src=\"https://m.media-amazon.com/images/I/61r7yWoY4+L._SX160_QL100_AC_SCLZZZZZZZ_.jpg\" alt=\"Max Men's Cotton Blend Casual Sweatshirt\" role=\"presentation\">",
+          "target": [
+            "div[data-csa-c-pos=\"3,1\"] > .imageContainer--14vu8 > .imageAnchor--21TeS[data-id=\"ImageAnchor\"][role=\"link\"] > .responsive-image_lazyImg__2NuGN.responsive-image_visible__3_4CF.responsive-image_responsiveImg__OZBqH"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role presentation is not allowed for given element"
+        },
+        {
+          "any": [
+            {
+              "id": "aria-allowed-role",
+              "data": [
+                "presentation"
+              ],
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "ARIA role presentation is not allowed for given element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "minor",
+          "html": "<img class=\"responsive-image_lazyImg__2NuGN responsive-image_visible__3_4CF responsive-image_responsiveImg__OZBqH\" srcset=\"https://m.media-amazon.com/images/I/71k9JEeasHL._SX160_QL100_AC_SCLZZZZZZZ_.jpg, https://m.media-amazon.com/images/I/71k9JEeasHL._SX240_QL100_AC_SCLZZZZZZZ_.jpg 1.5x, https://m.media-amazon.com/images/I/71k9JEeasHL._SX320_QL100_AC_SCLZZZZZZZ_.jpg 2x, https://m.media-amazon.com/images/I/71k9JEeasHL._SX480_QL100_AC_SCLZZZZZZZ_.jpg 3x\" src=\"https://m.media-amazon.com/images/I/71k9JEeasHL._SX160_QL100_AC_SCLZZZZZZZ_.jpg\" alt=\"Thomas Scott Mens | Solid | 100% Cotton | Full Sleeve | Button Down Collar | Casual | Shirt for Men\" role=\"presentation\">",
+          "target": [
+            "div[data-csa-c-pos=\"4,1\"] > .imageContainer--14vu8 > .imageAnchor--21TeS[data-id=\"ImageAnchor\"][role=\"link\"] > .responsive-image_lazyImg__2NuGN.responsive-image_visible__3_4CF.responsive-image_responsiveImg__OZBqH"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role presentation is not allowed for given element"
+        },
+        {
+          "any": [
+            {
+              "id": "aria-allowed-role",
+              "data": [
+                "presentation"
+              ],
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "ARIA role presentation is not allowed for given element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "minor",
+          "html": "<img class=\"responsive-image_lazyImg__2NuGN responsive-image_visible__3_4CF responsive-image_responsiveImg__OZBqH\" srcset=\"https://m.media-amazon.com/images/I/51MHPIB2XSL._SX160_QL100_AC_SCLZZZZZZZ_.jpg, https://m.media-amazon.com/images/I/51MHPIB2XSL._SX240_QL100_AC_SCLZZZZZZZ_.jpg 1.5x, https://m.media-amazon.com/images/I/51MHPIB2XSL._SX320_QL100_AC_SCLZZZZZZZ_.jpg 2x, https://m.media-amazon.com/images/I/51MHPIB2XSL._SX480_QL100_AC_SCLZZZZZZZ_.jpg 3x\" src=\"https://m.media-amazon.com/images/I/51MHPIB2XSL._SX160_QL100_AC_SCLZZZZZZZ_.jpg\" alt=\"BENE KLEED Men Pants\" role=\"presentation\">",
+          "target": [
+            "img[alt=\"BENE KLEED Men Pants\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role presentation is not allowed for given element"
+        },
+        {
+          "any": [
+            {
+              "id": "aria-allowed-role",
+              "data": [
+                "presentation"
+              ],
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "ARIA role presentation is not allowed for given element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "minor",
+          "html": "<img class=\"responsive-image_lazyImg__2NuGN responsive-image_visible__3_4CF responsive-image_responsiveImg__OZBqH\" srcset=\"https://m.media-amazon.com/images/I/71ei6myk5fL._SX160_QL100_AC_SCLZZZZZZZ_.jpg, https://m.media-amazon.com/images/I/71ei6myk5fL._SX240_QL100_AC_SCLZZZZZZZ_.jpg 1.5x, https://m.media-amazon.com/images/I/71ei6myk5fL._SX320_QL100_AC_SCLZZZZZZZ_.jpg 2x, https://m.media-amazon.com/images/I/71ei6myk5fL._SX480_QL100_AC_SCLZZZZZZZ_.jpg 3x\" src=\"https://m.media-amazon.com/images/I/71ei6myk5fL._SX160_QL100_AC_SCLZZZZZZZ_.jpg\" alt=\"Highlander Men Shirt\" role=\"presentation\">",
+          "target": [
+            "img[alt=\"Highlander Men Shirt\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  ARIA role presentation is not allowed for given element"
+        }
+      ]
+    },
+    {
+      "id": "aria-required-attr",
+      "impact": "critical",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412"
+      ],
+      "description": "Ensures elements with ARIA roles have all required ARIA attributes",
+      "help": "Required ARIA attributes must be provided",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/aria-required-attr?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "aria-required-attr",
+              "data": [
+                "aria-level"
+              ],
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Required ARIA attribute not present: aria-level"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<span aria-label=\"The product BENE KLEED Men Pants is currently highlighted\" class=\"featuringText--CaAc1\" role=\"heading\" id=\"al_feat_asin_B0FF538LHK\"><span aria-describedby=\"al_feat_asin_B0FF538LHK\">Featured now</span></span>",
+          "target": [
+            "#al_feat_asin_B0FF538LHK"
+          ],
+          "failureSummary": "Fix any of the following:\n  Required ARIA attribute not present: aria-level"
+        }
+      ]
+    },
+    {
+      "id": "aria-roles",
+      "impact": "critical",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412"
+      ],
+      "description": "Ensures all elements with a role attribute use a valid value",
+      "help": "ARIA roles used must conform to valid values",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/aria-roles?application=axeAPI",
+      "nodes": [
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "invalidrole",
+              "data": [
+                "image"
+              ],
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Role must be one of the valid ARIA roles: image"
+            }
+          ],
+          "impact": "critical",
+          "html": "<svg width=\"14px\" height=\"9.882352941176471px\" viewBox=\"0 0 17 12\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" data-testid=\"LiveViewersImage\" role=\"image\" aria-labelledby=\"eyeIcon\">",
+          "target": [
+            "svg"
+          ],
+          "failureSummary": "Fix all of the following:\n  Role must be one of the valid ARIA roles: image"
+        }
+      ]
+    },
+    {
+      "id": "avoid-inline-spacing",
+      "impact": "serious",
+      "tags": [
+        "cat.structure",
+        "wcag21aa",
+        "wcag1412"
+      ],
+      "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+      "help": "Inline text spacing must be adjustable with custom stylesheets",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/avoid-inline-spacing?application=axeAPI",
+      "nodes": [
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "avoid-inline-spacing",
+              "data": [
+                "line-height"
+              ],
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+            }
+          ],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"a-truncate\" data-a-word-break=\"normal\" data-a-max-rows=\"1\" data-a-overflow-marker=\"&amp;hellip;\" style=\"line-height:1.3em !important;max-height:1.3em\" data-a-recalculate=\"false\" data-a-updated=\"true\">",
+          "target": [
+            "#CardInstanceRvXhYw-8mG8hV9-v3EI5MA > .a-cardui-footer > .aok-block.a-link-normal > .a-truncate[data-a-max-rows=\"1\"][data-a-word-break=\"normal\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "avoid-inline-spacing",
+              "data": [
+                "line-height"
+              ],
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+            }
+          ],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"a-truncate\" data-a-word-break=\"normal\" data-a-max-rows=\"1\" data-a-overflow-marker=\"&amp;hellip;\" style=\"line-height:1.3em !important;max-height:1.3em\" data-a-recalculate=\"false\" data-a-updated=\"true\">",
+          "target": [
+            "#CardInstanceJqSFpK49PizmGOk1vcNlJw > .a-cardui-footer > .aok-block.a-link-normal > .a-truncate[data-a-max-rows=\"1\"][data-a-word-break=\"normal\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "avoid-inline-spacing",
+              "data": [
+                "line-height"
+              ],
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+            }
+          ],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"a-truncate\" data-a-word-break=\"normal\" data-a-max-rows=\"1\" data-a-overflow-marker=\"&amp;hellip;\" style=\"line-height:1.3em !important;max-height:1.3em\" data-a-recalculate=\"false\" data-a-updated=\"true\">",
+          "target": [
+            "#CardInstance6FCOiP0GOG4a9yW_7_GTYg > .a-cardui-footer > .aok-block.a-link-normal > .a-truncate[data-a-max-rows=\"1\"][data-a-word-break=\"normal\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "avoid-inline-spacing",
+              "data": [
+                "line-height"
+              ],
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+            }
+          ],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"a-truncate\" data-a-word-break=\"normal\" data-a-max-rows=\"1\" data-a-overflow-marker=\"&amp;hellip;\" style=\"line-height:1.3em !important;max-height:1.3em\" data-a-recalculate=\"false\" data-a-updated=\"true\">",
+          "target": [
+            "#CardInstance7MPg2Q6eliXglSi4ipHAMg > .a-cardui-footer > .aok-block.a-link-normal > .a-truncate[data-a-max-rows=\"1\"][data-a-word-break=\"normal\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "avoid-inline-spacing",
+              "data": [
+                "line-height"
+              ],
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+            }
+          ],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"a-truncate\" data-a-word-break=\"normal\" data-a-max-rows=\"2\" data-a-overflow-marker=\"&amp;hellip;\" style=\"line-height:1.3em !important;max-height:2.6em\" data-a-recalculate=\"false\" data-a-updated=\"true\">",
+          "target": [
+            "#CardInstance0WGcno6tDVPxLGa7fyTXEA > .a-cardui-header > .headline > .a-truncate[data-a-max-rows=\"2\"][data-a-word-break=\"normal\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "avoid-inline-spacing",
+              "data": [
+                "line-height"
+              ],
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+            }
+          ],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"a-truncate\" data-a-word-break=\"normal\" data-a-max-rows=\"1\" data-a-overflow-marker=\"&amp;hellip;\" style=\"line-height:1.3em !important;max-height:1.3em\" data-a-recalculate=\"false\" data-a-updated=\"true\">",
+          "target": [
+            "#CardInstance0WGcno6tDVPxLGa7fyTXEA > .a-cardui-footer > .aok-block.a-link-normal > .a-truncate[data-a-max-rows=\"1\"][data-a-word-break=\"normal\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "avoid-inline-spacing",
+              "data": [
+                "line-height"
+              ],
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+            }
+          ],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"a-truncate\" data-a-word-break=\"normal\" data-a-max-rows=\"1\" data-a-overflow-marker=\"&amp;hellip;\" style=\"line-height:1.3em !important;max-height:1.3em\" data-a-recalculate=\"false\" data-a-updated=\"true\">",
+          "target": [
+            "._Zmx1a_footer_2cH0y > .a-truncate[data-a-max-rows=\"1\"][data-a-word-break=\"normal\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "avoid-inline-spacing",
+              "data": [
+                "line-height"
+              ],
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+            }
+          ],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"a-truncate\" data-a-word-break=\"normal\" data-a-max-rows=\"2\" data-a-overflow-marker=\"&amp;hellip;\" style=\"line-height:1.3em !important;max-height:2.6em\" data-a-recalculate=\"false\" data-a-updated=\"true\">",
+          "target": [
+            "#CardInstancetQcBUZhrzzJaxtjlVZZ41A > .a-cardui-header > .headline > .a-truncate[data-a-max-rows=\"2\"][data-a-word-break=\"normal\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "avoid-inline-spacing",
+              "data": [
+                "line-height"
+              ],
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+            }
+          ],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"a-truncate\" data-a-word-break=\"normal\" data-a-max-rows=\"2\" data-a-overflow-marker=\"&amp;hellip;\" style=\"line-height:1.3em !important;max-height:2.6em\" data-a-recalculate=\"false\" data-a-updated=\"true\">",
+          "target": [
+            "#CardInstanceocXQEA4MauvCGiYLMWmbQA > .a-cardui-header > .headline > .a-truncate[data-a-max-rows=\"2\"][data-a-word-break=\"normal\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "avoid-inline-spacing",
+              "data": [
+                "line-height"
+              ],
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+            }
+          ],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"a-truncate\" data-a-word-break=\"normal\" data-a-max-rows=\"2\" data-a-overflow-marker=\"&amp;hellip;\" style=\"line-height:1.3em !important;max-height:2.6em\" data-a-recalculate=\"false\" data-a-updated=\"true\">",
+          "target": [
+            "#CardInstance_L1xkdB_XLd3LkW8yQ4Q-w > .a-cardui-header > .headline > .a-truncate[data-a-max-rows=\"2\"][data-a-word-break=\"normal\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "avoid-inline-spacing",
+              "data": [
+                "line-height"
+              ],
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+            }
+          ],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"a-truncate\" data-a-word-break=\"normal\" data-a-max-rows=\"2\" data-a-overflow-marker=\"&amp;hellip;\" style=\"line-height:1.3em !important;max-height:2.6em\" data-a-recalculate=\"false\" data-a-updated=\"true\">",
+          "target": [
+            "#CardInstanceXioSY_S5_J-EER4M5yIv-w > .a-cardui-header > .headline > .a-truncate[data-a-max-rows=\"2\"][data-a-word-break=\"normal\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "avoid-inline-spacing",
+              "data": [
+                "line-height"
+              ],
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+            }
+          ],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"a-truncate\" data-a-word-break=\"normal\" data-a-max-rows=\"2\" data-a-overflow-marker=\"&amp;hellip;\" style=\"line-height:1.3em !important;max-height:2.6em\" data-a-recalculate=\"false\" data-a-updated=\"true\">",
+          "target": [
+            "#CardInstanceqTNiSqHw0Innz4sof7HI8g > .a-cardui-header > .headline > .a-truncate[data-a-max-rows=\"2\"][data-a-word-break=\"normal\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "avoid-inline-spacing",
+              "data": [
+                "line-height"
+              ],
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+            }
+          ],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"a-truncate a-size-base a-text-normal\" data-a-word-break=\"normal\" data-a-max-rows=\"2\" data-a-overflow-marker=\"&amp;hellip;\" style=\"line-height:1.3em !important;max-height:2.6em\" data-a-recalculate=\"false\" data-a-updated=\"true\">",
+          "target": [
+            "._multi-asin-thumbnails_style_activeHero__1E5kM > ._multi-asin-thumbnails_desktopStyle_heroTitle__3uWba.a-section > .a-color-base > .a-size-base.a-truncate[data-a-max-rows=\"2\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "avoid-inline-spacing",
+              "data": [
+                "line-height"
+              ],
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+            }
+          ],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"a-truncate\" data-a-word-break=\"normal\" data-a-max-rows=\"2\" data-a-overflow-marker=\"&amp;hellip;\" style=\"line-height:1.3em !important;max-height:2.6em\" data-a-recalculate=\"false\" data-a-updated=\"true\">",
+          "target": [
+            "#CardInstance7MgYvupJLxJxtajxBvmofw > .a-cardui-header > .headline > .a-truncate[data-a-max-rows=\"2\"][data-a-word-break=\"normal\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "avoid-inline-spacing",
+              "data": [
+                "line-height"
+              ],
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+            }
+          ],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"a-truncate\" data-a-word-break=\"normal\" data-a-max-rows=\"2\" data-a-overflow-marker=\"&amp;hellip;\" style=\"line-height:1.3em !important;max-height:2.6em\" data-a-recalculate=\"false\" data-a-updated=\"true\">",
+          "target": [
+            "#CardInstanceR_OKbUFrkW5piTeJj0T7Ag > .a-cardui-header > .headline > .a-truncate[data-a-max-rows=\"2\"][data-a-word-break=\"normal\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "avoid-inline-spacing",
+              "data": [
+                "line-height"
+              ],
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+            }
+          ],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"a-truncate\" data-a-word-break=\"normal\" data-a-max-rows=\"2\" data-a-overflow-marker=\"&amp;hellip;\" style=\"line-height:1.3em !important;max-height:2.6em\" data-a-recalculate=\"false\" data-a-updated=\"true\">",
+          "target": [
+            "#CardInstancesZeB9sJGCJfIpuBoH2fH4g > .a-cardui-header > .headline > .a-truncate[data-a-max-rows=\"2\"][data-a-word-break=\"normal\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "avoid-inline-spacing",
+              "data": [
+                "line-height"
+              ],
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+            }
+          ],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"a-truncate\" data-a-word-break=\"normal\" data-a-max-rows=\"2\" data-a-overflow-marker=\"&amp;hellip;\" style=\"line-height:1.3em !important;max-height:2.6em\" data-a-recalculate=\"false\" data-a-updated=\"true\">",
+          "target": [
+            "#CardInstanceVgQ367He5luZC0Qajba4sA > .a-cardui-header > .headline > .a-truncate[data-a-max-rows=\"2\"][data-a-word-break=\"normal\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "avoid-inline-spacing",
+              "data": [
+                "line-height"
+              ],
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+            }
+          ],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"a-truncate\" data-a-word-break=\"normal\" data-a-max-rows=\"2\" data-a-overflow-marker=\"&amp;hellip;\" style=\"line-height:1.3em !important;max-height:2.6em\" data-a-recalculate=\"false\" data-a-updated=\"true\">",
+          "target": [
+            "#CardInstanceu6XsbFYyJeYhFZ3hFm28aw > .a-cardui-header > .headline > .a-truncate[data-a-max-rows=\"2\"][data-a-word-break=\"normal\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Remove '!important' from inline style line-height, as overriding this is not supported by most browsers"
+        }
+      ]
+    },
+    {
+      "id": "heading-order",
+      "impact": "moderate",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "description": "Ensures the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/heading-order?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order invalid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<div class=\"navFooterColHead\" role=\"heading\" aria-level=\"6\">Get to Know Us</div>",
+          "target": [
+            ".navFooterLinkCol.navAccessibility:nth-child(1) > .navFooterColHead[aria-level=\"6\"][role=\"heading\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+        }
+      ]
+    },
+    {
+      "id": "image-redundant-alt",
+      "impact": "minor",
+      "tags": [
+        "cat.text-alternatives",
+        "best-practice"
+      ],
+      "description": "Ensure image alternative is not repeated as text",
+      "help": "Alternative text of images should not be repeated as text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/image-redundant-alt?application=axeAPI",
+      "nodes": [
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element contains <img> element with alt text that duplicates existing text"
+            }
+          ],
+          "impact": "minor",
+          "html": "<img alt=\"Cushion covers, bedsheets &amp; more\" src=\"https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_furnishings_2._SY116_CB555624324_.jpg\" class=\"_Zmx1a_fluidLandscapeImage_2euAK _Zmx1a_fluidImage_gTBjA\" data-a-hires=\"https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/2x/372x232_Home_furnishings_2._SY232_CB555629502_.jpg\">",
+          "target": [
+            "#CardInstanceRvXhYw-8mG8hV9-v3EI5MA > ._Zmx1a_fluidQuadImageLabelBody_3tld0 > ._Zmx1a_gridRowOne_1t0zL.a-spacing-small.a-section > ._Zmx1a_leftQuadrant_21nVp._Zmx1a_quadrantContainer_3TMqG.a-section > ._Zmx1a_centerImage_30wh-.image-window.aok-block > ._Zmx1a_fluidImageContainer_2SOMr.a-section.a-spacing-none > ._Zmx1a_fluidLandscapeImage_2euAK._Zmx1a_fluidImage_gTBjA"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element contains <img> element with alt text that duplicates existing text"
+            }
+          ],
+          "impact": "minor",
+          "html": "<img alt=\"Figurines, vases &amp; more\" src=\"https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_decor_1._SY116_CB555624324_.jpg\" class=\"_Zmx1a_fluidLandscapeImage_2euAK _Zmx1a_fluidImage_gTBjA\" data-a-hires=\"https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/2x/372x232_Home_decor_1._SY232_CB555629502_.jpg\">",
+          "target": [
+            "img[alt=\"Figurines, vases & more\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element contains <img> element with alt text that duplicates existing text"
+            }
+          ],
+          "impact": "minor",
+          "html": "<img alt=\"Home storage\" src=\"https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_storage_1._SY116_CB555624324_.jpg\" class=\"_Zmx1a_fluidLandscapeImage_2euAK _Zmx1a_fluidImage_gTBjA\" data-a-hires=\"https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/2x/372x232_Home_storage_1._SY232_CB555629502_.jpg\">",
+          "target": [
+            "img[alt=\"Home storage\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element contains <img> element with alt text that duplicates existing text"
+            }
+          ],
+          "impact": "minor",
+          "html": "<img alt=\"Lighting solutions\" src=\"https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_lighting_2._SY116_CB555624324_.jpg\" class=\"_Zmx1a_fluidLandscapeImage_2euAK _Zmx1a_fluidImage_gTBjA\" data-a-hires=\"https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/2x/372x232_Home_lighting_2_-_Copy._SY232_CB555629502_.jpg\">",
+          "target": [
+            "img[alt=\"Lighting solutions\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element contains <img> element with alt text that duplicates existing text"
+            }
+          ],
+          "impact": "minor",
+          "html": "<img alt=\"Up to 45% off | Laptops\" src=\"https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img25/nov/bau/ain/gw/Laptops_186_116_10._SY116_CB777673831_.jpg\" class=\"_Zmx1a_fluidLandscapeImage_2euAK _Zmx1a_fluidImage_gTBjA\" data-a-hires=\"https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img25/nov/bau/ain/gw1/Laptops_372_232._SY232_CB777666522_.jpg\">",
+          "target": [
+            "img[alt=\"Up to 45% off | Laptops\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element contains <img> element with alt text that duplicates existing text"
+            }
+          ],
+          "impact": "minor",
+          "html": "<img alt=\"Up to 60% off | Kitchen appliances\" src=\"https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img25/nov/bau/ain/gw/KitchenAppliances_186_116_10._SY116_CB777673831_.jpg\" class=\"_Zmx1a_fluidLandscapeImage_2euAK _Zmx1a_fluidImage_gTBjA\" data-a-hires=\"https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img25/nov/bau/ain/gw1/KitchenAppliances_372_232._SY232_CB777666522_.jpg\">",
+          "target": [
+            "#CardInstanceJqSFpK49PizmGOk1vcNlJw > ._Zmx1a_fluidQuadImageLabelBody_3tld0 > ._Zmx1a_gridRowOne_1t0zL.a-spacing-small.a-section > ._Zmx1a_rightQuadrant_PI01n._Zmx1a_quadrantContainer_3TMqG.a-section > ._Zmx1a_centerImage_30wh-.image-window.aok-block > ._Zmx1a_fluidImageContainer_2SOMr.a-section.a-spacing-none > ._Zmx1a_fluidLandscapeImage_2euAK._Zmx1a_fluidImage_gTBjA"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element contains <img> element with alt text that duplicates existing text"
+            }
+          ],
+          "impact": "minor",
+          "html": "<img alt=\"Min. 50% off | Office furniture\" src=\"https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img25/nov/bau/ain/gw/OfficeChairs_186_116_10._SY116_CB777673831_.jpg\" class=\"_Zmx1a_fluidLandscapeImage_2euAK _Zmx1a_fluidImage_gTBjA\" data-a-hires=\"https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img25/nov/bau/ain/gw1/OfficeChairs_372_232._SY232_CB777666522_.jpg\">",
+          "target": [
+            "#CardInstanceJqSFpK49PizmGOk1vcNlJw > ._Zmx1a_fluidQuadImageLabelBody_3tld0 > ._Zmx1a_gridRowTwo_15woW.a-section > ._Zmx1a_leftQuadrant_21nVp._Zmx1a_quadrantContainer_3TMqG.a-section > ._Zmx1a_centerImage_30wh-.image-window.aok-block > ._Zmx1a_fluidImageContainer_2SOMr.a-section.a-spacing-none > ._Zmx1a_fluidLandscapeImage_2euAK._Zmx1a_fluidImage_gTBjA"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element contains <img> element with alt text that duplicates existing text"
+            }
+          ],
+          "impact": "minor",
+          "html": "<img alt=\"Refrigerators\" src=\"https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08345R1ZW._SY116_CB667322346_.jpg\" class=\"_Zmx1a_fluidLandscapeImage_2euAK _Zmx1a_fluidImage_gTBjA\" data-a-hires=\"https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/B08345R1ZW---372x232._SY232_CB667322346_.jpg\">",
+          "target": [
+            "img[alt=\"Refrigerators\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element contains <img> element with alt text that duplicates existing text"
+            }
+          ],
+          "impact": "minor",
+          "html": "<img alt=\"Microwaves\" src=\"https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B07G5J5FYP._SY116_CB667322346_.jpg\" class=\"_Zmx1a_fluidLandscapeImage_2euAK _Zmx1a_fluidImage_gTBjA\" data-a-hires=\"https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/B07G5J5FYP._SY232_CB667322346_.jpg\">",
+          "target": [
+            "img[alt=\"Microwaves\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element contains <img> element with alt text that duplicates existing text"
+            }
+          ],
+          "impact": "minor",
+          "html": "<img alt=\"Washing machines\" src=\"https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/186x116---wm._SY116_CB667322346_.jpg\" class=\"_Zmx1a_fluidLandscapeImage_2euAK _Zmx1a_fluidImage_gTBjA\" data-a-hires=\"https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08CPQVLZT._SY232_CB667322346_.jpg\">",
+          "target": [
+            "img[alt=\"Washing machines\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element contains <img> element with alt text that duplicates existing text"
+            }
+          ],
+          "impact": "minor",
+          "html": "<img alt=\"Home tools\" src=\"https://images-eu.ssl-images-amazon.com/images/G/31/img18/HomeImprovement/harsmisc/2025/March/Tools_low_res_V1._SY116_CB549138744_.jpg\" class=\"_Zmx1a_fluidLandscapeImage_2euAK _Zmx1a_fluidImage_gTBjA\" data-a-hires=\"https://images-eu.ssl-images-amazon.com/images/G/31/img18/HomeImprovement/harsmisc/2025/March/Tools__hi-res_v3._SY232_CB549134196_.jpg\">",
+          "target": [
+            "img[alt=\"Home tools\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        },
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "duplicate-img-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element contains <img> element with alt text that duplicates existing text"
+            }
+          ],
+          "impact": "minor",
+          "html": "<img alt=\"Wallpapers\" src=\"https://images-eu.ssl-images-amazon.com/images/G/31/img18/HomeImprovement/harsmisc/2025/March/Wallpapers_low_res_V1._SY116_CB549138744_.jpg\" class=\"_Zmx1a_fluidLandscapeImage_2euAK _Zmx1a_fluidImage_gTBjA\" data-a-hires=\"https://images-eu.ssl-images-amazon.com/images/G/31/img18/HomeImprovement/harsmisc/2025/March/Wallpapers__hi-res_v3._SY232_CB549134196_.jpg\">",
+          "target": [
+            "img[alt=\"Wallpapers\"]"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+        }
+      ]
+    },
+    {
+      "id": "label-title-only",
+      "impact": "serious",
+      "tags": [
+        "cat.forms",
+        "best-practice"
+      ],
+      "description": "Ensures that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+      "help": "Form elements should have a visible label",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/label-title-only?application=axeAPI",
+      "nodes": [
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "title-only",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Only title used to generate label for form element"
+            }
+          ],
+          "impact": "serious",
+          "html": "<select aria-describedby=\"searchDropdownDescription\" class=\"nav-search-dropdown searchSelect nav-progressive-attrubute nav-progressive-search-dropdown\" data-nav-digest=\"hhziVplHAm5p3dKrw6I8PjH3ToE=\" data-nav-selected=\"0\" id=\"searchDropdownBox\" name=\"url\" style=\"display: block;\" tabindex=\"0\" title=\"Search in\">",
+          "target": [
+            "#searchDropdownBox"
+          ],
+          "failureSummary": "Fix all of the following:\n  Only title used to generate label for form element"
+        }
+      ]
+    },
+    {
+      "id": "landmark-banner-is-top-level",
+      "impact": "moderate",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "description": "Ensures the banner landmark is at top level",
+      "help": "Banner landmark should not be contained in another landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/landmark-banner-is-top-level?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "landmark-is-top-level",
+              "data": {
+                "role": "banner"
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "The banner landmark is contained in another landmark."
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<div id=\"gw-desktop-herotator\" data-autorotation-delay=\"4000\" class=\"a-section a-spacing-none aok-relative tall gw-desktop-herotator-ready\" role=\"banner\">",
+          "target": [
+            "#gw-desktop-herotator"
+          ],
+          "failureSummary": "Fix any of the following:\n  The banner landmark is contained in another landmark."
+        }
+      ]
+    },
+    {
+      "id": "landmark-no-duplicate-banner",
+      "impact": "moderate",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "description": "Ensures the document has at most one banner landmark",
+      "help": "Document should not have more than one banner landmark",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/landmark-no-duplicate-banner?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "page-no-duplicate-banner",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<div id=\"gw-desktop-herotator\" data-autorotation-delay=\"4000\" class=\"a-section a-spacing-none aok-relative tall gw-desktop-herotator-ready\" role=\"banner\">",
+                  "target": [
+                    "#gw-desktop-herotator"
+                  ]
+                }
+              ],
+              "impact": "moderate",
+              "message": "Document has more than one banner landmark"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<header id=\"navbar-main\" class=\"nav-opt-sprite nav-flex nav-locale-in nav-lang-en nav-ssl nav-unrec nav-progressive-attribute\">",
+          "target": [
+            "#navbar-main"
+          ],
+          "failureSummary": "Fix any of the following:\n  Document has more than one banner landmark"
+        }
+      ]
+    },
+    {
+      "id": "landmark-unique",
+      "impact": "moderate",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "help": "Ensures landmarks are unique",
+      "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/landmark-unique?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "landmark-is-unique",
+              "data": {
+                "role": "banner",
+                "accessibleText": null
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div id=\"gw-desktop-herotator\" data-autorotation-delay=\"4000\" class=\"a-section a-spacing-none aok-relative tall gw-desktop-herotator-ready\" role=\"banner\">",
+                  "target": [
+                    "#gw-desktop-herotator"
+                  ]
+                }
+              ],
+              "impact": "moderate",
+              "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<header id=\"navbar-main\" class=\"nav-opt-sprite nav-flex nav-locale-in nav-lang-en nav-ssl nav-unrec nav-progressive-attribute\">",
+          "target": [
+            "#navbar-main"
+          ],
+          "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+        }
+      ]
+    },
+    {
+      "id": "nested-interactive",
+      "impact": "serious",
+      "tags": [
+        "cat.keyboard",
+        "wcag2a",
+        "wcag412"
+      ],
+      "description": "Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+      "help": "Interactive controls must not be nested",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/nested-interactive?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "no-focusable-content",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<a href=\"/Cetaphil-Hydrating-Sulphate-Free-Niacinamide-Sensitive/dp/B01CCGW4OE/?_encoding=UTF8&amp;pd_rd_w=BgloR&amp;content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&amp;pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&amp;pf_rd_r=CT7EWRF75KZ380ME6JXS&amp;pd_rd_wg=FtdF0&amp;pd_rd_r=5f2db9a4-4e0f-4460-afcc-e81e39ac2d6d&amp;ref_=pd_hp_d_btf_crs_zg_bs_1355016031\" class=\"a-button-text\" id=\"a-autoid-0-announce\">",
+                  "target": [
+                    "#a-autoid-0-announce"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has focusable descendants"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<li class=\"thumbnail0 _multi-asin-thumbnails_desktopStyle_thumbnail__3PpZH _multi-asin-thumbnails_desktopStyle_thumbnailGutter__3h1FG\" role=\"radio\">",
+          "target": [
+            ".thumbnail0"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        },
+        {
+          "any": [
+            {
+              "id": "no-focusable-content",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<a href=\"/Bare-Anatomy-Dandruff-Strengthens-Salicylic/dp/B0F5BLYYCN/?_encoding=UTF8&amp;pd_rd_w=BgloR&amp;content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&amp;pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&amp;pf_rd_r=CT7EWRF75KZ380ME6JXS&amp;pd_rd_wg=FtdF0&amp;pd_rd_r=5f2db9a4-4e0f-4460-afcc-e81e39ac2d6d&amp;ref_=pd_hp_d_btf_crs_zg_bs_1355016031\" class=\"a-button-text\" id=\"a-autoid-1-announce\">",
+                  "target": [
+                    "#a-autoid-1-announce"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has focusable descendants"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<li class=\"thumbnail1 _multi-asin-thumbnails_desktopStyle_thumbnail__3PpZH _multi-asin-thumbnails_desktopStyle_thumbnailGutter__3h1FG\" role=\"radio\">",
+          "target": [
+            ".thumbnail1"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        },
+        {
+          "any": [
+            {
+              "id": "no-focusable-content",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<a href=\"/Simple-Kind-Refreshing-Facial-Globalbeauty/dp/B000LQUA6M/?_encoding=UTF8&amp;pd_rd_w=BgloR&amp;content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&amp;pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&amp;pf_rd_r=CT7EWRF75KZ380ME6JXS&amp;pd_rd_wg=FtdF0&amp;pd_rd_r=5f2db9a4-4e0f-4460-afcc-e81e39ac2d6d&amp;ref_=pd_hp_d_btf_crs_zg_bs_1355016031\" class=\"a-button-text\" id=\"a-autoid-2-announce\">",
+                  "target": [
+                    "#a-autoid-2-announce"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has focusable descendants"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<li class=\"thumbnail2 _multi-asin-thumbnails_desktopStyle_thumbnail__3PpZH _multi-asin-thumbnails_desktopStyle_thumbnailGutter__3h1FG\" role=\"radio\">",
+          "target": [
+            ".thumbnail2"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        },
+        {
+          "any": [
+            {
+              "id": "no-focusable-content",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<a href=\"/NIVEA-Body-Lotion-Nourishing-600ml/dp/B07VKM2HR5/?_encoding=UTF8&amp;pd_rd_w=BgloR&amp;content-id=amzn1.sym.211684f4-ebe1-443f-8a4a-0773471e979f&amp;pf_rd_p=211684f4-ebe1-443f-8a4a-0773471e979f&amp;pf_rd_r=CT7EWRF75KZ380ME6JXS&amp;pd_rd_wg=FtdF0&amp;pd_rd_r=5f2db9a4-4e0f-4460-afcc-e81e39ac2d6d&amp;ref_=pd_hp_d_btf_crs_zg_bs_1355016031\" class=\"a-button-text\" id=\"a-autoid-3-announce\">",
+                  "target": [
+                    "#a-autoid-3-announce"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has focusable descendants"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<li class=\"thumbnail3 _multi-asin-thumbnails_desktopStyle_thumbnail__3PpZH _multi-asin-thumbnails_desktopStyle_thumbnailGutter__3h1FG\" role=\"radio\">",
+          "target": [
+            ".thumbnail3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has focusable descendants"
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": "moderate",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/page-has-heading-one?application=axeAPI",
+      "nodes": [
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "page-has-heading-one",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Page must have a level-one heading"
+            }
+          ],
+          "none": [],
+          "impact": "moderate",
+          "html": "<html lang=\"en-in\" class=\"a-ws a-js a-audio a-video a-canvas a-svg a-drag-drop a-geolocation a-history a-webworker a-autofocus a-input-placeholder a-textarea-placeholder a-local-storage a-gradients a-transform3d a-touch-scrolling a-text-shadow a-text-stroke a-box-shadow a-border-radius a-border-image a-opacity a-transform a-transition null\" data-19ax5a9jf=\"dingo\" data-aui-build-date=\"3.26.1-2026-01-29\" data-useragent=\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36\" data-platform=\"Win32\" style=\"--al-scrollbar-color: #C1C1C1; --al-primary-color: #FFFFFF; --al-highlight-color: #FF6200; --al-text-color: #000000;\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "description": "Ensures all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.4/region?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<div class=\"navFooterVerticalColumn navAccessibility\" role=\"presentation\">",
+          "target": [
+            ".navFooterVerticalColumn"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<span>\n      <div class=\"navFooterLine navFooterLogoLine\">\n        <a aria-label=\"Amazon India Home\" lang=\"en\" href=\"/ref=footer_logo\">\n        <div class=\"nav-logo-base nav-sprite\"></div>\n        </a>\n      </div>\n</span>",
+          "target": [
+            ".navFooterPadItemLine.navFooterLinkLine.navFooterLine:nth-child(4) > span:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<a href=\"/customer-preferences/edit?ie=UTF8&amp;preferencesReturnUrl=%2F&amp;ref_=footer_lang\" class=\"icp-language-link\" aria-label=\"Choose a language for shopping. Current selection is English. \">",
+          "target": [
+            ".icp-language-link"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<div class=\"navFooterLine navFooterLinkLine navFooterDescLine\" aria-label=\"More on Amazon\">",
+          "target": [
+            ".navFooterDescLine"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<div class=\"navFooterLine navFooterLinkLine navFooterPadItemLine navFooterCopyright\">",
+          "target": [
+            ".navFooterCopyright"
+          ],
+          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ]
+}
